@@ -1,18 +1,16 @@
 <template>
-  <div class="container">
-    <h2>Blog</h2>
+  <div>
+
   </div>
 </template>
 
 <script>
-
-
 export default {
-  name:'Blog',
+name:'testimonios'
 
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>

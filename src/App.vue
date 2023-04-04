@@ -1,17 +1,23 @@
 <template>
 <div>
-  <nav>
-    <router-link to="/">Portafolio</router-link> |
-    <router-link to="/about">Servicios</router-link> |
-    <router-link to="/contacto">Contacto</router-link> |
-    <router-link to="/blog">Blog</router-link> |
-    <router-link to="/testimonios">Testimonios</router-link> |
-    <router-link to="/sobremi">Sobre mi</router-link>
-  </nav>
+  <navegacion/>
   <router-view class="router"/>
   <img class="logo" alt="Vue logo" src="./assets/logo2.png">
 </div>
 </template>
+
+<script>
+import navegacion from './components/navegacion.vue'
+
+export default {
+  name: 'app',
+  components: {
+    navegacion
+  } 
+}
+
+</script>
+
 
 <style>
 #app {
@@ -29,6 +35,18 @@
 
   color: #c1cdda;
 }
+.logo{
+  width: 200px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+@media (max-width:991px) {
+  #app{
+    font-size: calc(0.5vw + 0.3rem);
+  }
+}
 
 @keyframes slider {
   from {
@@ -40,25 +58,4 @@
     background-size: 150%;
   }
 }
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #c1cdda;
-}
-
-nav a.router-link-exact-active {
-  color: #4256b9;
-}
-
-.logo{
-  width: 200px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-}
-
 </style>

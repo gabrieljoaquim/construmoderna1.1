@@ -28,6 +28,13 @@ const routes = [
     component: function () {
       return import('../views/BlogView.vue')
     }
+  },
+  {
+    path: '/testimonios',
+    name: 'testimonios',
+    component: function () {
+      return import('../views/Testimonios.vue')
+    }
   }
 ]
 
