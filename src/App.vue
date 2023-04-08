@@ -21,17 +21,15 @@ export default {
 
 <style>
 #app {
-  width: 100%;
-  height: 900px;
-
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   
-  background: url(./assets/ren6effectsResult.png);
+  background: rgb(54, 93, 54);
+  /* background: url(./assets/ren6effectsResult.png);
   background-position: fixed;
-  animation: slider 25s infinite alternate;
+  animation: slider 25s infinite alternate; */
 
   color: #c1cdda;
 }
@@ -42,7 +40,7 @@ export default {
   bottom: 0;
 }
 
-@media (max-width:991px) {
+/* @media (max-width:991px) {
   #app{
     font-size: calc(0.5vw + 0.3rem);
   }
@@ -57,5 +55,5 @@ export default {
     background-position: center;
     background-size: 150%;
   }
-}
+} */
 </style>
